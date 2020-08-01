@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: honeydew;
+    font-family: 'Lora', serif;
+    font-family: 'PT Serif', serif;
+}
+
+
+.header{
+    width: 100%;
+    height: 600px;
+    background-image: url(img/panorama-of-garden-pathway-2339180.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: inherit;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+/* .header-container{
+    margin:auto ;
+    width: 30%;
+    height:30%;
+    border-radius: 50%;
+    background-color: rgba(22, 19, 19, 0.4);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition:  1s;
+
+    
+} */
+
+/* .header-container:hover{
+    background-color: rgba(22, 19, 19, 0.7);
+    transition: 0.7s;
+} */
+
+
+header div h2{
+    font-size: 40px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.25);
+    text-align: center; 
+}
+header div h3{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* presentetion------------------------------------------------------- */
+
+.bg-container-photo{
+    background-image: url("img/foto-fondo-1.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: inherit;
+    background-size: contain;
+    width: 100%;
+}
+
+.presentation-container{
+   
+    height: 1100px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(30deg, #1e272e 70%,  rgba(22, 19, 19, 0.2) 30%);
+    /* background-color: #1e272e; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* opacity:0.4; */
+   
+}
+
+
+    .info-container{
+        height: 500px;
+        width: 75%;
+        box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        background-color: rgba(44, 62, 80,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .foto{
+       height:85%;
+        width: 30%;
+        background-color:blue;
+        border-radius: 3px;
+    } 
+         .uno{
+            background-image: url(img/cellar-with-wine-bottles-774455.jpg);
+            background-repeat:no-repeat;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size:cover;
+            background-position:center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .dos{
+            background-image: url(img/wine-fruit-food-glass-88691.jpg);
+            background-repeat:no-repeat;
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size:cover;
+            background-position:center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .info-container >p{
+            width: 40%;
+            border: solid 1px red;
+        }
+
+        /* -----------------------------------PRODUCTS CONTAINER */
+        .space-div{
+            height: 10vh;
+            width:100% ;
+        }
+
+        .bg-container-photo2{
+            background-image: url("img/foto-fondo-2.jpg");
+            background-repeat: no-repeat;
+            /* background-position: center center; */
+            background-attachment: inherit;
+            background-size: cover;
+            width: 100%;
+            position: relative;
+        }
+        .bg-container-photo2:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(255, 255, 255,0.3);
+        }
+        
+        .products-container{
+            width: 85%;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .products-container h4{
+            font-style: italic;
+        }
+            .product{
+                width: 85%;
+                height: 500px;
+                background-color: #1e272e;
+                margin: 0 auto;
+                position:absolute;
+                /* border:2px solid red; */
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+            }
+            .product img{
+                width: 300px;
+                border-radius: 5px;
+            }
+            .product p{
+                width: 80%;
+                text-align: center;
+                font-size:15px;   
+            }
+
+           .product button{
+               width: 70px;
+               height: 70px;
+               border-radius: 35px;
+               background-color: darkslategray;
+               border: none;
+               opacity: 0.8;
+           }
+           .product button:hover{
+               opacity: 1;
+           }
+            #product1{
+                z-index: 2;
+            }
+            #product2{   
+                z-index: 1;
+            }
+
+            .text-product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 50%;
+                height: 400px;  
+            }
+            
+            /* ----------------------------------------contact */
+
+
+.contact{
+    width: 85%;
+    height: 400px;
+    margin: 0 auto;
+    background: #570606;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .contact-card{
+        width: 45%;
+        height: 200px;
+        border: 1px red solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .news-email{
+        width: 45%;
+        height: 200px;
+        /* border: 1px red solid; */
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        
+    } 
+    hr{
+        width: 50%;
+        opacity: 0.4;
+    }
+    input{
+        width: 90%;
+        height: 40px;
+        border-radius: 5px 25px;
+        border: none;
+        padding: 10px;
+        background-color: #360000;
+        opacity: 0.8;
+        transition: 1s;
+    }
+    input:hover{
+        opacity:1;
+        transition: 1s;
+    }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: whitesmoke;
+                font-size: medium;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */ 
+                color: whitesmoke;
+                font-size: medium;
+            }
+    
+
+            
+    /* animation border-bottom -------------*/
+    h2:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px whitesmoke;  
+        transform: scaleX(0);  
+        transition: transform 700ms ease-in-out;
+      }
+      h2:hover:after { transform: scaleX(1); }
+      h2.fromRight:after{ transform-origin:100% 50%; }
+      h2.fromLeft:after{  transform-origin:  0% 50%; }
+
+     /* responsive media query */
+
+    
+
+     @media screen and (max-width:1000px){
+        .header{
+            height: 400px;   
+        }
+        .foto{
+            height:67%; 
+        }
+        .presentation-container{
+   
+            height: 800px;
+        }
+        .info-container p{
+            font-size: 13px;
+            width: 50%;
+        }
+        .info-container h2{
+            text-align: center;
+        }
+    
+        .products-container{
+            height: 400px;
+        }
+        
+        .product img{
+            width: 230px;
+        }
+        .product p{
+            width: 80%;
+            text-align: center;
+            font-size:13px;   
+            border: solid red 1px;
+        }
+        .contact{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+     }
+/* 700px----------- */
+     @media screen and (max-width:700px) {
+        .header{
+            height: 300px;   
+        }
+        .info-container {
+            width: 85%;
+            height: 350px;
+        }
+     }
+    
