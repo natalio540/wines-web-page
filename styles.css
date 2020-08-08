@@ -8,7 +8,7 @@
 }
 
 
-.header{
+header{
     width: 100%;
     height: 600px;
     background-image: url(img/panorama-of-garden-pathway-2339180.jpg) ;
@@ -16,30 +16,25 @@
     background-position: center center;
     background-attachment: inherit;
     background-size: cover;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-/* .header-container{
-    margin:auto ;
-    width: 30%;
-    height:30%;
-    border-radius: 50%;
-    background-color: rgba(22, 19, 19, 0.4);
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition:  1s;
-    
-} */
 
-/* .header-container:hover{
-    background-color: rgba(22, 19, 19, 0.7);
-    transition: 0.7s;
-} */
+    display: flex;
+    
+    /* align-items: center;
+    justify-content: center  */
+    
+}
+.text-title{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+   
+}
+
+header i {
+    align-content: flex-start;
+    border: 1px solid blue;
+    
+}
 
 
 header div h2{
@@ -58,7 +53,7 @@ header div h3{
     letter-spacing: 2px;
 }
 
-/* presentetion------------------------------------------------------- */
+/* section 1 ------------------------------------------------------- */
 
 .bg-container-photo{
     background-image: url("img/foto-fondo-1.jpg");
@@ -137,7 +132,7 @@ header div h3{
         text-shadow: 2px 2px rgba(250, 250, 250, 0.25);
     }
 
-    /* ------------PRODUCTS CONTAINER */
+                                                  /* ------------section 2 --------- */
 .space-div{
     height: 10vh;
     width:100% ;
@@ -230,8 +225,51 @@ header div h3{
     font-weight: 200;
     letter-spacing: 1px;
 }
+
+/* section 3------------------------------------------- */
+
+.location-container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.photo-container{
+    flex: 1;
+    background-color: lawngreen;
+    background-image: url(img/wine-1761613_1280.jpg);
+    background-attachment: inherit;
+    background-size: cover;
+    flex-direction: column; 
+}
+
+.photo-container h2{
+    color: #1e272e;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.direction-container{
+    flex: 1;
+    background-color: lightcoral;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
- /* ----------------------------------------contact */
+ /* ----------------------------------------section 4 */
 
 
 .contact{
@@ -308,13 +346,14 @@ input:hover{
     width: 50px;
     height: 30px;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.9;
     border: black;
     border-radius: 2px;
+    cursor: pointer;
 }  
 
 .back-to-top:hover{
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .btn-submit{
@@ -324,6 +363,7 @@ input:hover{
     border: rgba(255, 230, 128,0.3) solid 1px;
     border-radius: 2px;
     outline: none;
+    cursor: pointer;
 }
 .btn-submit:hover{
     background-color: #252f36;
@@ -385,6 +425,9 @@ h2:after {
         text-align: center;
         margin-top: 20px;
     }
+    .location-container{
+        flex-direction: column;
+    }
  }
 /* 700px----------- */
 @media screen and (max-width:768px) {
@@ -403,6 +446,9 @@ h2:after {
     }
     input{
         height: 20px;
+    }
+    .contact{
+        flex-direction: column;
     }
 }
 
@@ -433,3 +479,26 @@ h2:after {
     
 }
     
+
+
+
+
+/* .header-container{
+    margin:auto ;
+    width: 30%;
+    height:30%;
+    border-radius: 50%;
+    background-color: rgba(22, 19, 19, 0.4);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition:  1s;
+    
+} */
+
+/* .header-container:hover{
+    background-color: rgba(22, 19, 19, 0.7);
+    transition: 0.7s;
+} */
