@@ -18,7 +18,7 @@ header{
     background-size: cover;
 
     display: flex;
-    
+    flex-direction: column;
     /* align-items: center;
     justify-content: center  */
     
@@ -30,17 +30,12 @@ header{
    
 }
 
-header i {
-    align-content: flex-start;
-    border: 1px solid blue;
-    
-}
 
 
 header div h2{
-    font-size: 45px;
-    font-weight: 500;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
     text-align: center;
     letter-spacing: 4px; 
 }
@@ -51,6 +46,37 @@ header div h3{
     text-align: center;
     font-style: italic;
     letter-spacing: 2px;
+}
+
+.nav-bar{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    border-bottom:1px solid rgb(255, 255, 255,0.3);
+    /* border: solid 1px red; */
+    margin: 0 auto;
+    align-items: center;
+    font-size: 13px;
+    opacity: 0.9;
+
+}
+.nav-bar:hover{
+    opacity: 1;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+}
+.nav-bar ul li{
+    margin-left: 20px;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+}
+.nav-bar h1{
+    font-size: 30px;
+    border-bottom: solid 3px  rgb(255, 255, 255,0.4);
 }
 
 /* section 1 ------------------------------------------------------- */
@@ -123,7 +149,7 @@ header div h3{
     .scroll-text{
         width: 40%;
 
-        border: solid 1px red; 
+        /* border: solid 1px red;  */
     }
 
     .info-container h2{
@@ -132,7 +158,48 @@ header div h3{
         text-shadow: 2px 2px rgba(250, 250, 250, 0.25);
     }
 
-                                                  /* ------------section 2 --------- */
+
+
+/* section 2------------------------------------------- */
+
+.location-container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.photo-container{
+    flex: 1;
+    background-color: lawngreen;
+    background-image: url(img/wine-1761613_1280.jpg);
+    background-attachment: inherit;
+    background-size: cover;
+    flex-direction: column; 
+}
+
+.photo-container h2{
+    color: #1e272e;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.direction-container{
+    flex: 1;
+    background-color: lightcoral;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* ------------section 3 --------- */
 .space-div{
     height: 10vh;
     width:100% ;
@@ -187,7 +254,8 @@ header div h3{
  .product p{
      width: 80%;
      text-align: center;
-     font-size:15px;   
+     font-size:15px;
+     /* border: solid red 1px;    */
  }
 
 .product button{
@@ -204,11 +272,11 @@ header div h3{
 }
 
 #product1{  
-    z-index: 2;
+    z-index: 1;
 }
 
 #product2{   
-    z-index: 1;
+    z-index: 0;
 }
 
 .text-product{
@@ -224,34 +292,6 @@ header div h3{
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 1px;
-}
-
-/* section 3------------------------------------------- */
-
-.location-container{
-    display: flex;
-    width: 100%;
-    height: 600px;
-}
-.photo-container{
-    flex: 1;
-    background-color: lawngreen;
-    background-image: url(img/wine-1761613_1280.jpg);
-    background-attachment: inherit;
-    background-size: cover;
-    flex-direction: column; 
-}
-
-.photo-container h2{
-    color: #1e272e;
-    font-size: 45px;
-    font-weight: 400;
-    padding: 30px;
-}
-
-.direction-container{
-    flex: 1;
-    background-color: lightcoral;   
 }
 
 
@@ -408,7 +448,7 @@ h2:after {
     }
 
     .products-container{
-        height: 400px;
+        height: 450px;
     }
     
     .product img{
@@ -418,7 +458,7 @@ h2:after {
         width: 80%;
         text-align: center;
         font-size:13px;   
-        border: solid red 1px;
+        /* border: solid red 1px; */
     }
     .contact{
         font-size: 15px;
@@ -433,6 +473,21 @@ h2:after {
 @media screen and (max-width:768px) {
     .header{
         height: 300px;   
+    }
+
+    .letra{
+        font-size: 25px;
+    }    
+    .nav-bar{
+        font-size: 10px;
+        margin-left: 15px;
+        height: 7vh;
+    }
+    .nav-bar h1{
+        font-size: 15px;
+    }
+    .nav-bar ul{
+        margin-left: 20px;
     }
     .info-container {
         width: 85%;
@@ -449,6 +504,7 @@ h2:after {
     }
     .contact{
         flex-direction: column;
+        margin-top: 50px;
     }
 }
 
@@ -457,25 +513,39 @@ h2:after {
         height: 240px;
         width: 200px;
         overflow: scroll;
+        scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+    }
+
+
+    .nav-bar ul{
+        font-size: 7px;
+        margin-left: 5px;
     }
     .foto h2{
         font-size: 20px;
     }
+    
     .product img{
         width: 150px;
     }
+    
+
+    
     .text-product h4{
         font-size: 15px;
     }
-    .contact, .contact h2{
-        font-size: 12px;
+    .contact {
+        font-size: 13px;
     }
     input{
         height: 5px;
+        width: 200px;
     }
-    .back-to-top{
-        margin-right: 15px;
-    }
+    /* .back-to-top{
+        margin-right: 10px;
+        margin-top: 10px;
+    } */
     
 }
     
